@@ -76,7 +76,7 @@ const Home = () => {
         </div>
 
         {/* Right Column: Premium Dashboard Mockup */}
-        <div className='flex items-center justify-center lg:justify-end'>
+        <div className='hidden lg:flex items-center justify-center lg:justify-end'>
           <div className='mockup-window relative w-full max-w-125 aspect-5/4 bg-white/2 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl overflow-hidden hover:scale-[1.01] transition-transform duration-500 group'>
             
             {/* Window Top Controls */}

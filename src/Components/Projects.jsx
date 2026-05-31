@@ -99,21 +99,21 @@ const Projects = () => {
 
             <div
               key={project.id}
-              className={`group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-orange-500/30 ${
+              className={`group relative overflow-hidden rounded-3xl border border-white/10 bg-white/3 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-orange-500/30 ${
                 project.featured
-                  ? "md:col-span-2 flex-col lg:flex-row lg:h-[480px]"
+                  ? "md:col-span-2 flex-col lg:flex-row lg:h-120"
                   : "flex-col"
               } flex`}
             >
 
               {/* Gradient Glow */}
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/0 via-orange-500/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+              <div className="absolute inset-0 bg-linear-to-br from-orange-500/0 via-orange-500/3 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
               {/* Image Section */}
               <div
                 className={`relative overflow-hidden ${
                   project.featured
-                    ? "w-full lg:w-3/5 h-[280px] lg:h-full"
+                    ? "w-full lg:w-3/5 h-70 lg:h-full"
                     : "w-full h-72"
                 }`}
               >
@@ -175,7 +175,7 @@ const Projects = () => {
 
                   <a
                     href={project.link}
-                    className="inline-flex items-center gap-2 text-sm text-white hover:text-orange-500 transition-colors duration-300"
+                    className="inline-flex items-center gap-2 text-sm text-white group-hover:text-orange-500 transition-colors duration-300"
                   >
                     View Project
 
@@ -196,7 +196,7 @@ const Projects = () => {
         </div>
 
       </div>
-      <div className="w-full h-px bg-white/10 my-8"></div>
+      <div className="w-full h-px bg-white/10 my-28"></div>
 
     </section>
   )

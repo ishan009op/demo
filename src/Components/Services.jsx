@@ -40,7 +40,7 @@ const Services = () => {
         <img
           src="https://images.unsplash.com/photo-1616366071248-7ce95824d3c3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJsYWNrJTIwYW5kJTIwb3JhbmdlfGVufDB8fDB8fHww"
           alt=""
-          className="w-full h-full object-cover opacity-70  blur-sm  scale-110"
+          className="w-full h-full object-cover opacity-65 blur-sm  scale-110"
         />
 
         {/* Dark Layer */}
@@ -67,7 +67,7 @@ const Services = () => {
             <span className="text-orange-500">development</span>
           </h1>
 
-          <p className="text-white/50 mt-6 max-w-xl">
+          <p className="text-white/50 archivo mt-6 max-w-xl">
             Crafting digital experiences that feel modern, clean, and emotionally engaging.
           </p>
 
@@ -80,7 +80,7 @@ const Services = () => {
 
             <div
               key={index}
-              className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/2 backdrop-blur-xl transition-all duration-500 hover:border-orange-500/30 hover:-translate-y-2"
+              className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/2 backdrop-blur-xl transition-all duration-500 hover:border-orange-500/30 hover:-translate-y-2"
             >
 
               {/* Image */}
@@ -95,7 +95,7 @@ const Services = () => {
                 />
 
                 {/* Number */}
-                <span className="absolute top-5 left-5 z-20 text-5xl font-bold text-white/45">
+                <span className="absolute top-5 left-5 z-20 text-5xl group-hover:text-white/60 font-bold text-white/45">
                   {service.number}
                 </span>
 

@@ -1,5 +1,10 @@
 import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap'
+import {
+  ArrowRight,
+  Briefcase,
+  Sparkles
+} from "lucide-react";
 
 const Home = () => {
   const comp = useRef(null)
@@ -45,23 +50,24 @@ const Home = () => {
       <div className="bg-vignette absolute inset-0 bg-linear-to-r from-black/80 via-black/40 to-black/80"></div>
 
       {/* Hero Layout Grid Container */}
-      <div className='relative z-10 w-full max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pt-24'>
+      <div className='relative z-10 w-full max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pt-28 md:pt-32'>
         
         {/* Left Column: Hero Typography */}
         <div className='flex flex-col gap-8 text-left max-w-xl'>
-          <h1 className='hero-title text-5xl lg:text-6xl lora leading-[1.15] text-white tracking-tight'>
-            Turning Ideas Into Modern Digital{" "}
+          <h1 className='hero-title text-4xl sm:text-5xl lg:text-6xl lora leading-[1.15] text-white tracking-tight'>
+            Crafting Visual Identities That{" "}
             <span className='text-orange-500 font-bold tracking-normal block lg:inline'>
-              Products
+             Inspire & Convert
             </span>
           </h1>
           <p className='hero-desc text-lg lg:text-xl text-white/70 archivo leading-relaxed'>
-            Beautiful interfaces, seamless interactions, and scalable development tailored for modern businesses.
+            Beautiful interfaces, seamless interactions, and scalable designs tailored for modern businesses.
           </p>
 
-          <div className='hero-ctas flex items-center gap-4 mt-4'>
-            <button className='bg-orange-500 hover:bg-orange-600 text-white font-medium px-6 py-3 rounded-xl transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] shadow-lg shadow-orange-500/20 cursor-pointer'>
+          <div className='hero-ctas flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mt-4'>
+            <button className='bg-orange-500 hover:bg-orange-600 text-white font-medium px-5 py-3 rounded-xl transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] shadow-lg shadow-orange-500/20 cursor-pointer'>
               View Projects
+        
             </button>
             <button className='border-2 border-orange-500/50 hover:border-orange-500 text-orange-400 hover:text-white hover:bg-orange-500/10 font-medium px-6 py-3 rounded-xl transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] cursor-pointer'>
               Contact Me
@@ -87,11 +93,11 @@ const Home = () => {
               <div className='grid grid-cols-2 gap-4'>
                 <div className='bg-white/4 border border-white/5 rounded-2xl p-4 transition-colors group-hover:bg-white/6'>
                   <p className='text-white/40 text-xs font-medium uppercase tracking-wider mb-1'>Projects</p>
-                  <h3 className='text-3xl text-white font-bold tracking-tight'>12+</h3>
+                  <h3 className='text-3xl text-white font-bold tracking-tight'> 12+</h3>
                 </div>
                 <div className='bg-orange-500/1 border border-orange-500/10 rounded-2xl p-4'>
                   <p className='text-orange-400/80 text-xs font-medium uppercase tracking-wider mb-1'>Experience</p>
-                  <h3 className='text-3xl text-orange-400 font-bold tracking-tight'>MERN</h3>
+                  <h3 className='text-3xl text-orange-400 font-bold tracking-tight'>Graphics</h3>
                 </div>
               </div>
 
@@ -107,7 +113,7 @@ const Home = () => {
               {/* Status Footer */}
               <div className='flex justify-between items-center pt-2 border-t border-white/5'>
                 <p className='text-white/50 text-sm font-light'>
-                  Building modern web experiences
+                  Building modern Digital experiences
                 </p>
                 <button className='bg-orange-500 hover:bg-orange-600 text-white font-medium px-5 py-2.5 rounded-xl transition-colors duration-300 shadow-md shadow-orange-500/10 cursor-pointer'>
                   Explore

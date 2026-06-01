@@ -196,7 +196,7 @@ const Projects = () => {
         </div>
 
       </div>
-      <div className="w-full h-px bg-white/10 my-28"></div>
+      <div className="w-full h-px bg-white/10 my-20"></div>
 
     </section>
   )
